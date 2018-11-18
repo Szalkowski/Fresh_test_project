@@ -62,8 +62,11 @@
     }
 
     .hero {
+        height: auto !important;
+        padding: 15px 20px;
+
         .carousel-wrapper {
-            display: none;
+            width: 50% !important;
         }
 
         .scroll {
@@ -71,6 +74,7 @@
         }
 
         &__content {
+            position: relative !important;
             width: 100%;
 
             &--title {
@@ -157,6 +161,12 @@
 }
 
 @media screen and (max-width: 570px) {
+    .hero {
+        .carousel-wrapper {
+            width: 75% !important;
+        }
+    }
+
     .about, .speaker {
         min-height: 300px !important;
     }
