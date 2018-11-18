@@ -1,0 +1,201 @@
+@media screen and (max-width: 1120px) {
+    .hero {
+        min-height: 55vw;
+
+        .carousel-wrapper {
+            width: 25vw !important;
+        }
+    }
+
+    .column {
+        width: 100%;
+
+        .centered {
+            position: static;
+            transform: translate(0, 0);
+
+            &.start-box {
+                margin: 10vw auto;
+            }
+        }
+    }
+
+    .about, .speaker {
+        min-height: 25vw !important;
+        width: 50%;
+    }
+
+    .speaker {
+        &__reference {
+            top: 5vw !important;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 10px !important;
+    }
+
+    .btn {
+        &__transparent {
+            &--arrow-right {
+                width: 25px !important;
+
+                &:after {
+                    right: (-25px) !important;
+                }
+            }
+        }
+    }
+
+    .pd-50-60 {
+        padding: 15px 20px !important;
+    }
+
+    header {
+        .topbar {
+            &__navigation {
+                padding: 0 20px !important;
+            }
+        }
+    }
+
+    .hero {
+        .carousel-wrapper {
+            display: none;
+        }
+
+        .scroll {
+            display: none;
+        }
+
+        &__content {
+            width: 100%;
+
+            &--title {
+                font-size: 8vw !important;
+            }
+
+            &--subtitle {
+                margin-bottom: 2vw !important;
+            }
+        }
+
+        .start-btn {
+            margin: 2vw 0 !important;
+        }
+    }
+
+    .lettered-text {
+        margin-bottom: 15px !important;
+
+        span {
+            &:nth-child(2) {
+                margin-left: 13vw !important;
+            }
+        }
+    }
+
+    .about, .speaker {
+        background-position: 50% 50%;
+        width: 100%;
+        min-height: 40vw !important;
+
+        &__content {
+            padding: 15px 20px !important;
+
+            &--text {
+                width: 50% !important;
+            }
+        }
+    }
+
+    .speaker {
+        &__reference {
+            &--text {
+                width: 25vw !important;
+                height: 25vw !important;
+
+                .text {
+                    font-size: 2vw !important;
+                    width: 16vw !important;
+                }
+            }
+
+            &--image {
+                width: 10vw !important;
+            }
+        }
+    }
+
+    .start-box {
+        width: 100% !important;
+        padding: 0 20px !important;
+    }
+
+    footer {
+        .footer {
+            padding: 15px 20px !important;
+
+            .list, .form {
+                margin-top: 2vw !important;
+            }
+
+            .list {
+                margin-bottom: 2vw;
+            }
+
+            .form {
+                input {
+                    padding: 5px 10px 0 !important;
+                    font-size: 1rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .about, .speaker {
+        min-height: 300px !important;
+    }
+
+    .speaker {
+        &__reference {
+            top: 50% !important;
+            transform: translateY(-50%);
+
+            &--text {
+                .text {
+                    font-size: 2vw !important;
+                    width: 16vw !important;
+
+                    .subscription {
+                        font-size: 1.5vw !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .speaker {
+        &__content {
+            position: relative !important;
+
+            &--text {
+                width: 90% !important;
+            }
+        }
+
+        &__reference {
+            position: relative !important;
+            top: auto !important;
+            right: auto !important;
+            margin: 25px 0;
+            transform: translate(0, 0) !important;
+        }
+    }
+}

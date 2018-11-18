@@ -1,0 +1,34 @@
+header {
+    .topbar {
+        height: 75px;
+
+        &__navigation {
+            @include flex-wrapper(space-between, center, row);
+
+            padding: $pd-0-60;
+            height: 100%;
+            float: left;
+
+            img {
+                width: 121px;
+                max-width: 100%;
+            }
+
+            nav {
+                width: 40%;
+
+                a {
+                    @include font($Roboto, 1rem, 700);
+                }
+            }
+        }
+    }
+
+    .login {
+        @include flex-wrapper(space-around, center, row);
+
+        padding: $pd-0-60;
+        height: 100%;
+        background-color: $violet;
+    }
+}

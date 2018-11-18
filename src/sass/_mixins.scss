@@ -1,0 +1,32 @@
+@mixin flex-wrapper($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+@mixin font-face($name, $file, $style, $weight) {
+    @font-face {
+        font-family: $name;
+        src: url($file + ".eot");
+        src: url($file + ".eot?#iefix") format("embedded-opentype"), url($file + ".woff") format("woff"), url($file + ".ttf") format("truetype"), url($file + ".svg#fontname") format("svg");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@mixin font($name, $size, $weight) {
+    font-family: $name;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@for $i from 1 through 32 {
+    $width: calc((100% / 32) * #{$i});
+
+    .column-#{$i} {
+        position: relative;
+        width: $width;
+    }
+}

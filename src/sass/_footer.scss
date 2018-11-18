@@ -1,0 +1,74 @@
+footer {
+    .footer {
+        padding: 50px 60px;
+        min-height: 255px;
+
+        .list {
+            margin-top: 25px;
+            column-count: 2;
+
+            li {
+                line-height: 22px;
+
+                a {
+                    @include font($Roboto, 0.75rem, 300);
+
+                    color: $dark-gray;
+                }
+            }
+        }
+    }
+
+    h4 {
+        &.title {
+            @include font($Roboto, 1.125rem, 700);
+
+            color: $dark-blue;
+        }
+    }
+
+    .copyrights {
+        align-items: center;
+        justify-content: center;
+        min-height: 30px;
+        background-color: $white;
+    }
+
+    .form {
+        position: relative;
+        margin-top: 25px;
+
+        input {
+            @include font($Roboto, 0.75rem, 300);
+
+            padding: 15px 10px 0;
+            height: 40px;
+            width: 100%;
+            color: $dark-gray;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $dark-gray;
+
+            &:focus, &:active {
+                outline: none;
+            }
+        }
+
+        .btn-submit, .btn-edit {
+            @include font($Roboto, 0.75rem, 700);
+
+            color: $dark-blue;
+        }
+
+        .btn-edit {
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+        }
+
+        .btn-submit {
+            float: right;
+            margin-top: 25px;
+        }
+    }
+}

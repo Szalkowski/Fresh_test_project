@@ -1,0 +1,35 @@
+@import "./mixins";
+
+// COLORS //
+$white: #fff;
+$violet: #35124b;
+$light-violet: #7423b8;
+$red: #d91223;
+$dark-blue: #002d5c;
+$light-blue: #4d6885;
+$light-purple: #ebe2f2;
+$purple: #c7bfde;
+$gray: #ecedf5;
+$dark-gray: #7e7e7e;
+
+// FONTS //
+
+@include font-face("RobotoCondensed", "../fonts/RobotoCondensed-Bold", "normal", 700);
+@include font-face("RobotoCondensed", "../fonts/RobotoCondensed-Regular", "normal", 400);
+@include font-face("RobotoCondensed", "../fonts/RobotoCondensed-Light", "normal", 300);
+@include font-face("Raleway", "../fonts/Raleway-Black", "normal", 700);
+
+$Roboto: "RobotoCondensed";
+$Raleway: "Raleway";
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// OTHER
+
+$pd-0-60: 0 60px;
