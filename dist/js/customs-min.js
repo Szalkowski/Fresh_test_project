@@ -1,1 +1,0 @@
-$(function(){$(".hero-carousel").slick({prevArrow:$(".prev"),nextArrow:$(".next")}),$("#scroll-down").on("click",function(){var o=$(".hero").offset().top+$(".hero").outerHeight(!0);$("HTML, BODY").animate({scrollTop:o},1e3)})});
